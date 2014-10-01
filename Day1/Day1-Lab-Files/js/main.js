@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  WIA-####
+     Name:Konner Sherman
+     Date:September 30, 2014
+     Class & Section:  WIA-00
      Comments: "HTML5 Canvas Drawing"
  */
 
@@ -36,6 +36,23 @@ Reminder - set the style first then draw.
 
 //Draw Rectangle here
 
+window.onload = function(){
+	var theCanvas = document.getElementById("Canvas1");
+	var ctx = theCanvas.getContext("2d");
+	if(ctx !=null){
+
+		ctx.strokeStyle = "black";
+		ctx.fillStyle = "blue"
+
+		ctx.fillRect (0,0,50,100);
+		ctx.strokeRect (0,0,50,100);
+
+
+
+	};
+
+
+
 
 /*******************************************
 PART 2
@@ -53,6 +70,33 @@ Use the arc method
 //Draw Circle here
 
 
+	var theCanvas2 = document.getElementById("Canvas2");
+	var ctx2 = theCanvas2.getContext("2d");
+	if(ctx2 !=null){
+
+
+
+		ctx2.beginPath();
+		ctx2.arc(50,50,20,0,2.5*Math.PI);
+		ctx2.stroke();
+		ctx2.fill();
+
+		ctx2.strokeStyle= "black";
+		ctx2.fillStyle = "rgba(255, 21, 0, 0.5)";
+		ctx2.beginPath();
+		ctx2.arc(50,50,30,0,2.5*Math.PI);
+		ctx2.stroke();
+		ctx2.fill();
+
+
+
+
+
+	};
+
+
+
+
 
 
 /*******************************************
@@ -68,6 +112,25 @@ Height and width and color are up to you.
 
 
 //Draw Star here
+	var theCanvas3 = document.getElementById("Canvas3");
+	var ctx3 = theCanvas3.getContext("2d");
+	if(ctx3){
+					
+					ctx3.beginPath();
+					ctx3.moveTo(100,100);
+					ctx3.lineTo(70,20);
+					ctx3.lineTo(70,100);
+					ctx3.lineTo(30,100);
+					ctx3.lineTo(85,120);
+					ctx3.lineTo(100,200);
+					ctx3.lineTo(110,116);
+					ctx3.lineTo(200,100);
+					ctx3.lineTo(100,100);
+					ctx3.stroke();
+			
+
+	};
+
 
 
 /*******************************************
@@ -84,6 +147,28 @@ Do not overlap any other object.
 
 //Draw Umbrella top here
 
+	var theCanvas6 = document.getElementById("Canvas6");
+	var ctx6 = theCanvas6.getContext("2d");
+	if(ctx6){
+					
+					ctx6.beginPath();
+					ctx6.arc(200,200,100,0,1*Math.PI,true);
+					ctx6.stroke();
+					ctx6.beginPath()
+					ctx6.moveTo(200,200);
+					ctx6.lineTo(200,300);
+					ctx6.stroke();
+					ctx6.beginPath();
+					ctx6.moveTo(200,100);
+					ctx6.bezierCurveTo(50,200,200,100,100,100);
+					ctx6.stroke();
+				
+
+			
+
+	};
+
+
 /*******************************************
 PART 5
 
@@ -93,6 +178,15 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 ********************************************/
 
 //Draw text here
+
+var theCanvas5 = document.getElementById("Canvas5");
+var ctx5 = theCanvas5.getContext("2d");
+if(ctx5){
+	var words = "Konner Sherman was here!";
+	ctx5.fillStyle = "red";
+
+	ctx5.fillText(words,20,20);
+}
 
 /*******************************************
 PART 6
@@ -123,5 +217,5 @@ You must use at least 3 different methods.
 ********************************************/
 
 // Draw scene here
-
+};
 
