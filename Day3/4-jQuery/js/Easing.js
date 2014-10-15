@@ -1,15 +1,15 @@
 $(function() { 
 
             $("#right").click(function() {
-                $("#theDiv").animate({ width: "500px" }, 1000, "swing");
+                $("#theDiv").animate({ width: "500px" }, 1000, "easeOutBack");
             });
 
             $("#text").click(function() {
-                $("#theDiv").animate({ fontSize: "24pt" }, 1000, "swing");
+                $("#theDiv").animate({ fontSize: "24pt" }, 1000, "easeOutBounce");
             });
 
             $("#toggle").click(function() {
-                $("#theDiv").animate({ left: "500" }, 1000, "swing");
+                $("#theDiv").animate({ left: "500" }, 1000, "easeInOutBounce");
             });
             
             $("#multiple").click(function() {
@@ -25,7 +25,7 @@ $(function() {
 							
 					$(this).remove();
 					
-					} );
+					});
              }); 			 
 					
  

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FancyBox Example</title>
+	<script type="text/javascript"  src="includes/jquery-1.10.1.min.js" ></script>
+	<script type="text/javascript" src="includes/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox.css" media="screen" />
+
+	
+    
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//search for all anchor tags with class of fancy box 
+			$(".fancybox").fancybox();
+
+		});
+	
+	
+	</script>
+    
+	</head>
+	<body>
+		<h1>FancyBox</h1>
+		<a href="img/1-Large.jpg" class="fancybox" rel="group1" title="Picture 1 Caption">
+			<img src="img/1-Small.jpg" alt="Small Image" width="150">
+		</a>
+		<a href="img/2-Large.jpg" class="fancybox" rel="group1" title="Picture 1 Caption">
+		    	<img src="img/2-Small.jpg" alt="Small Image" width="150">
+		</a>		
+        
+        
+	</body>
+</html>
